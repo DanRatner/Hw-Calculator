@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-orange w3-center" style="padding:32px 16px">
+  <h1 class="w3-margin w3-xlarge">Woodside High School HW Calculator</h1>
+  
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container w3-center">
+    <h3>Common Subjects</h3>
+    <p>Leave as "None" if no subject.</p>
+    
+    <form action="/action_page.php"
+    oninput="x.value=(parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)+parseInt(e.value)+parseInt(f.value)+parseInt(g.value))/2+parseInt(h.value)">
+        English
+        <br>
+      <select type="number" id="a" name="a" value="0">
+          <option value="0">None</option>
+        <option value="30">English 1</option>
+        <option value="20">English 2</option>
+        <option value="45">English 3</option>
+        <option value="60">English 4</option>
+        <option value="45">AS English 1</option>
+        <option value="75">AS English 2</option>
+        <option value="105">AP English</option>
+        <option value="105">AP Literature</option>
+      </select>
+          <br>
+          Math
+          <br>
+      <select type="number" id="b" name="b" value="0">
+          <option value="0">None</option>
+        <option value="30">Algebra Readiness</option>
+        <option value="30">Algebra Topics</option>
+        <option value="35">Algebra 1</option>
+        <option value="45">Integrated Math</option>
+        <option value="45">Geometry</option>
+        <option value="45">Geometry Enriched</option>
+        <option value="60">Algebra 2</option>
+        <option value="90">Algebra 2 and Trig</option>
+        <option value="90">Pre Calc</option>
+        <option value="60">Statistics</option>
+        <option value="90">AP CALC BC</option>
+        <option value="90">AP STATS</option>
+        <option value="150">AP CALC AB</option>
+        
+      </select>
+          <br>
+         Science
+         <br>
+      <select type="number" id="c" name="c" value="0">
+          <option value="0">None</option>
+        <option value="30">Advanced Integrated Science</option>
+        <option value="30">Physics</option>
+        <option value="30">Chemistry</option>
+        <option value="10">Biology</option>
+        <option value="45">Human Biology</option>
+        <option value="20">Environmental Horticulture</option>
+        <option value="15">Astronomy</option>
+        <option value="60">AS CHEMISTRY</option>
+        <option value="75">AP BIOLOGY</option>
+        <option value="90">AP ENVIRONMENTAL SCIENCE</option>
+        <option value="90">AP PHYSICS</option>
+    
+      </select>
+          <br>
+        Social Studies
+        <br>
+      <select type="number" id="d" name="d" value="0">
+          <option value="0">None</option>
+        <option value="30">World Studies</option>
+        <option value="20">Life Skills</option>
+        <option value="35">Modern European History</option>
+        <option value="30">US History</option>
+        <option value="15">Gov and Econ</option>
+        <option value="30">Anthropology</option>
+        <option value="20">Psychology</option>
+        <option value="60">AP United States History</option>
+        <option value="70">AP European History</option>
+      </select>
+          <br>
+        World Language
+        <br>
+      <select type="number" id="e" name="e" value="0">
+          <option value="0">None</option>
+        <option value="5">French 1</option>
+        <option value="20">French 2</option>
+        <option value="10">French 3</option>
+        <option value="10">French 4</option>
+        <option value="10">Spanish 1</option>
+        <option value="20">Spanish 2</option>
+        <option value="35">Spanish 3</option>
+        <option value="40">Spanish 4</option>
+        <option value="5">Mandarin 1</option>
+        <option value="10">Mandarin 2</option>
+        <option value="15">Mandarin 3</option>
+        <option value="20">AP Mandarin 4</option>
+        <option value="10">Latin 1</option>
+        <option value="20">Latin 2</option>
+        <option value="30">Latin 3</option>
+        <option value="30">Latin 4</option>
+        <option value="60">AP Spanish</option>
+        <option value="20">AP Spanish Language and Culture</option>
+        <option value="30">AP Spanish Literature and Culture</option>
+        <option value="15">AP French</option>
+        <option value="45">AP Latin</option>
+        <option value="0"></option>
+      </select>
+          <br>
+    <h3>Electives</h3>
+    <p>(Electives without data or times not listed)</p>
+        Elective 1
+        <br>
+      <select type="number" id="f" name="f" value="0">
+          <option value="0">None</option>
+        <option value="10">Advance Animation</option>
+        <option value="5">Web Design</option>
+        <option value="10">Drama 1</option>
+        <option value="20">Mobile Apps and Development</option>
+        <option value="30">AP Studio Art</option>
+        <option value="30">AP Computer Science</option>
+        <option value="20">AP CS Principles</option>
+      </select>
+          <br>
+        Elective 2
+        <br>
+      <select type="number" id="g" name="g" value="0">
+          <option value="0">None</option>
+        <option value="10">Advance Animation</option>
+        <option value="5">Web Design</option>
+        <option value="10">Drama 1</option>
+        <option value="20">Mobile Apps and Development</option>
+        <option value="30">AP Studio Art</option>
+        <option value="30">AP Computer Science</option>
+        <option value="20">AP CS Principles</option>
+      </select>
+      <br>
+      <h3>Extracurriculur</h3>
+      <p>(Input any additional time a night you spend outside of school on extracurriculars, such as clubs, sports, or work)</p>
+      <input type="text" id="h" name="h" value=0 onkeypress='validate(event)'>
+        <br><br><br>
+     <h1>Total minutes(per night): <output name="x" for="a b c d e f g h"></output></h1>
+     
+      
+
+    </div>
+  </div>
+</div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Made by Daniel Ratner. See my <a href="www.danielratner.info">portfolio</a> here.</h1>
+</div>
+<script>
+    function validate(evt) {
+  var theEvent = evt || window.event;
+
+  // Handle paste
+  if (theEvent.type === 'paste') {
+      key = event.clipboardData.getData('text/plain');
+  } else {
+  // Handle key press
+      var key = theEvent.keyCode || theEvent.which;
+      key = String.fromCharCode(key);
+  }
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+    </script>
+</body>
+</html>
+
+
